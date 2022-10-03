@@ -27,7 +27,7 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden; 
-    position: absolute;
+    position: absolute;         
     top: 0;
     left: 0;
 }
@@ -68,6 +68,7 @@ section {
     .logo {
         height: 100px;
         width: 100px;
+        position: absolute;
     }
 }
 @media only screen and (max-width: 699px) {
@@ -76,6 +77,7 @@ section {
     }
 
     .logo {
+        position: absolute;
         height: 80px;
         width: 80px;
     }
@@ -481,7 +483,7 @@ section {
     justify-content: flex-end;
     margin: 0rem 6rem 0rem 2rem;
     padding: 2rem 1rem 0rem;
-    background: url(images/websiteImages/BG-main-grey.png);   
+    background: url(images/websiteImages/BG-main-grey.png);
 
 }
 .inner-container.active {
@@ -768,6 +770,7 @@ section {
 
 @media only screen and (max-width: 999px) {
     .about-container {
+        margin-top: 4rem;
         margin-right: 0rem;
         width: 90%;
     }
@@ -864,6 +867,6 @@ section {
         width: 90%;
         padding: 2rem 1rem;
         text-align: center;
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 }
