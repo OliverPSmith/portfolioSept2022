@@ -62,6 +62,7 @@ section {
     top: 6%;
     left: 3%;
     transform: rotateY(-45deg) translateZ(0) scale(1) skewY(-10deg);
+    z-index: 999;
 }
 @media only screen and (max-width: 999px) {
     .logo {
@@ -75,8 +76,8 @@ section {
     }
 
     .logo {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
 }
 
