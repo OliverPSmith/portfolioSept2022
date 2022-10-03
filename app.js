@@ -1,10 +1,11 @@
 
+
 /*   Responsive Menu   ************** */
 const hamburger = document.querySelector('.hamburger')
 const menu = document.querySelector('.home-menu');
 const details = document.querySelector('.details');
 const welcome = document.querySelector('.welcome');
-const slider = document.querySelector('.slider');
+//    const slider = document.querySelector('.slider');
 const navLinks = Array.from(document.querySelectorAll('.nav-links'));
 const innerCont = document.querySelector('.inner-container');
 const progCont = document.querySelector('.programming-container');
@@ -19,7 +20,7 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle('active');
     details.classList.toggle('active');
     welcome.classList.toggle('active');
-    slider.classList.toggle('active');
+  //  slider.classList.toggle('active');
     innerCont.classList.toggle('active');
     progCont.classList.toggle('active');
     aboutCont.classList.toggle('active');
@@ -31,7 +32,7 @@ hamburger.addEventListener('click', () => {
         menu.classList.remove('active');
         details.classList.remove('active');
         welcome.classList.remove('active');
-        slider.classList.remove('active');
+     //   slider.classList.remove('active');
         innerCont.classList.remove('active');
         progCont.classList.remove('active');
         aboutCont.classList.remove('active');
@@ -45,7 +46,7 @@ hamburger.addEventListener('click', () => {
             menu.classList.remove('active');
             details.classList.remove('active');
             welcome.classList.remove('active');
-            slider.classList.remove('active');
+         //   slider.classList.remove('active');
             innerCont.classList.remove('active');
             progCont.classList.remove('active');
             aboutCont.classList.remove('active');
