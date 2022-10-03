@@ -481,7 +481,7 @@ section {
     justify-content: flex-end;
     margin: 0rem 6rem 0rem 2rem;
     padding: 2rem 1rem 0rem;
-    background: url(images/websiteImages/BG-main-grey.png);
+  /*  background: url(images/websiteImages/BG-main-grey.png);   */
 
 }
 .inner-container.active {
