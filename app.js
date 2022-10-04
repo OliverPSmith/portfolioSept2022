@@ -1,5 +1,4 @@
 
-
 /*   Responsive Menu   ************** */
 const hamburger = document.querySelector('.hamburger')
 const menu = document.querySelector('.home-menu');
@@ -73,24 +72,7 @@ for (let navLink of navLinks) {
 }
 
 
-
-
-/*  */
-// show project on click
-
-/*
-const projects = Array.from(document.querySelectorAll('.project'));
-
-for (let i = 0; i < projects.length; i++) {
-    const project = projects[i];
-    project.addEventListener('click', () => {
-        project.classList.toggle('view');
-        project.querySelector('div .project-more').classList.toggle('view');
-    })
-}   */
-
-
-
+// toggle hover / click effect on project button
 const allProjectBtns = Array.from(document.querySelectorAll('.design-project'));
 for (let projectBtn of allProjectBtns) {
     projectBtn.addEventListener('click', () => {
@@ -101,7 +83,7 @@ for (let projectBtn of allProjectBtns) {
     });
 }
 
-
+//display project clicked / hide previous project displayed
 const voiceArtistbtn = document.getElementById('voice-artist-btn');
 const voiceArtistProject = document.getElementById('voice-artist-project');
 
@@ -207,4 +189,52 @@ logoDesignBtn.addEventListener('click', () => {
     yonexProject.classList.remove('view');
     pTProject.classList.remove('view');
 });
+
+
+
+// Animations from menuClick
+
+const designsMenuBtn = document.getElementById('designs-menu-btn');
+const designsHeading = document.getElementById('designs-heading');
+const designProjects = document.getElementById('design-projects');
+
+designsMenuBtn.addEventListener('click', () => {
+    designsHeading.classList.add('animate');
+    designProjects.classList.add('animate');
+})
+
+
+const programmingMenuBtn = document.getElementById('programming-menu-btn');
+const programmingHeading = document.getElementById('programming-heading');
+const programmingProjects = document.getElementById('programming-projects');
+
+programmingMenuBtn.addEventListener('click', () => {
+    programmingHeading.classList.add('animate');
+    programmingProjects.classList.add('animate');
+})
+
+const aboutMenuBtn = document.getElementById('about-menu-btn');
+const aboutHeading = document.getElementById('about-heading');
+const profileText = document.getElementById('profile-text');
+const iconImgs = Array.from(document.querySelectorAll('.lt-item'));
+
+aboutMenuBtn.addEventListener('click', () => {
+    aboutHeading.classList.add('animate');
+    profileText.classList.add('animate');
+
+    for (let i = 0; i < iconImgs.length; i++) {
+        iconImgs[i].classList.add('animate');
+    }
+})
+
+const contactMenuBtn = document.getElementById('contact-menu-btn');
+const contactSplash = document.getElementById('contact-splash');
+const tyMsg = document.getElementById('ty-msg');
+const contactLogo = document.getElementById('contact-logo');
+
+contactMenuBtn.addEventListener('click', () => {
+    contactSplash.classList.add('animate');
+    tyMsg.classList.add('animate');
+    contactLogo.classList.add('animate');
+})
 
